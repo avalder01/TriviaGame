@@ -1,0 +1,91 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Trivia Game</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- only if reset css is included -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!-- only if media queries are included -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+      <h1>Harry Potter Triva</h1>
+    </header>
+
+    <div id="gameBoard">
+        <div id="GameClock"></div>
+
+        <form name="myForm">
+                <div class="question1">
+                     <h3>Q1.What Hogwarts house is Harry Potter in?</h3>
+                        <input type="radio" name="q1" value="a">Slytherin
+                        <input type="radio" name="q1" value="b">Gryffindor
+                        <input type="radio" name="q1" value="c">Hufflepuff
+                        <input type="radio" name="q1" value="d">Ravenclaw 
+                </div>
+                <br>
+                <div class="question2">
+                        <h3>Q2.What position does Harry potter play in quidditch?</h3>
+                           <input type="radio" name="q1" value="a">Seeker
+                           <input type="radio" name="q1" value="b">Beater
+                           <input type="radio" name="q1" value="c">Keeper
+                           <input type="radio" name="q1" value="d">Chaser
+                   </div>
+                   <br>
+                   <div class="question3">
+                        <h3>Q3.Who is the head of house for Hufflepuff?</h3> 
+                           <input type="radio" name="q1" value="a">Severus Snape
+                           <input type="radio" name="q1" value="b">Minerva McGonagall
+                           <input type="radio" name="q1" value="c">Fillius Flitwick
+                           <input type="radio" name="q1" value="d">Pomona Sprout
+                   </div>
+                   <br>
+                   <div class="question4">
+                       <h3>Q4.Who is the grounds keeper of Hagrid?</h3>
+                           <input type="radio" name="q1" value="a">Argus Filch
+                           <input type="radio" name="q1" value="b">Rubius Hagrid
+                           <input type="radio" name="q1" value="c">Gildiroy Lockhart
+                           <input type="radio" name="q1" value="d">Horance Slughorn 
+                   </div>
+                   <br>
+                   <div class="question5">
+                        <h3>Q5.What is Albus Dumbledor's profession at Hogwarts?</h3>  
+                           <input type="radio" name="q1" value="a">Professor
+                           <input type="radio" name="q1" value="b">Janitor
+                           <input type="radio" name="q1" value="c">Headmaster
+                           <input type="radio" name="q1" value="d">Librarian
+                   </div>
+                   <br>
+                   <div class="question6">
+                    <h3>Q6.What are Slytherin house colors?</h3>
+                           <input type="radio" name="q1" value="a">Scarlet and Gold
+                           <input type="radio" name="q1" value="b">Black and Yellow
+                           <input type="radio" name="q1" value="c">Blue and Bronze
+                           <input type="radio" name="q1" value="d">Green and Silver 
+                   </div>
+                   <input type="button" value="submit" onclick="check()">
+            </form>
+
+        <div id=message></div>
+    </div>
+
+    <div id="startScreen">
+        <h1>Let's Get Magical!</h1>
+        <button id="start" type="button">Play!</button>
+    </div>
+
+    <div id="endScreen">
+        <h1>Results</h1>
+        <div id="numRight"></div>
+        <div id="numWrong"></div>
+        <button id="reset" type="button">Do You Want To Play Again?</button>
+    </div>
+
+</body>
+
+<script src="assets/javascript/app.js"></script>
+
+</html>

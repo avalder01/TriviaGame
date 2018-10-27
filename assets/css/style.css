@@ -1,3 +1,44 @@
 body {
     text-align: center;
+    background-color: #57060f;
+background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23a9b251' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  
+   
+}
+
+
+#startScreen{
+
+ position: relative;
+  width: 700px;
+  margin: 0 auto 0 auto;
+  top: 110px;
+  padding: 20px;
+  color: white;
+  background: #807e7e;
+    
+}
+
+
+
+
+#gameWrapper{
+    position: relative;
+    width: 700px;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    color: white;
+    background: #807e7e;
+ 
+}
+
+
+#endScreen{
+  position: relative;
+  width: 700px;
+  margin: 0 auto 0 auto;
+  top: 110px;
+  padding: 20px;
+  color: white;
+  background: #807e7e;
 }

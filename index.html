@@ -3,6 +3,8 @@
 <head>
     <title>Trivia Game</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- for buttons maybe  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- only if reset css is included -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -11,12 +13,18 @@
 </head>
 
 <body>
-    <header>
-      <h1>Harry Potter Triva</h1>
-    </header>
+     <div id="startScreen">
+         <h1>Let's Get Magical!</h1>
+         <img id="harrypotter" src="https://i.pinimg.com/originals/10/ee/50/10ee50ba758bd240f737d46ab57ca83e.jpg" alt=fatlady>
+         <br>
+         <button id="start" type="button">Enter</button>
+    </div>
 
-    <div id="gameBoard">
-        <div id="GameClock"></div>
+    <div id="gameWrapper">
+        <!-- <div id="GameClock"></div> -->
+        <div class="header">
+                <h1>Harry Potter Triva</h1>
+        </div>
 
         <form name="myForm">
                 <div class="question1">
@@ -29,60 +37,60 @@
                 <br>
                 <div class="question2">
                         <h3>Q2.What position does Harry potter play in quidditch?</h3>
-                           <input type="radio" name="q1" value="a">Seeker
-                           <input type="radio" name="q1" value="b">Beater
-                           <input type="radio" name="q1" value="c">Keeper
-                           <input type="radio" name="q1" value="d">Chaser
+                           <input type="radio" name="q2" value="a">Seeker
+                           <input type="radio" name="q2" value="b">Beater
+                           <input type="radio" name="q2" value="c">Keeper
+                           <input type="radio" name="q2" value="d">Chaser
                    </div>
                    <br>
                    <div class="question3">
                         <h3>Q3.Who is the head of house for Hufflepuff?</h3> 
-                           <input type="radio" name="q1" value="a">Severus Snape
-                           <input type="radio" name="q1" value="b">Minerva McGonagall
-                           <input type="radio" name="q1" value="c">Fillius Flitwick
-                           <input type="radio" name="q1" value="d">Pomona Sprout
+                           <input type="radio" name="q3" value="a">Severus Snape
+                           <input type="radio" name="q3" value="b">Minerva McGonagall
+                           <input type="radio" name="q3" value="c">Fillius Flitwick
+                           <input type="radio" name="q3" value="d">Pomona Sprout
                    </div>
                    <br>
                    <div class="question4">
-                       <h3>Q4.Who is the grounds keeper of Hagrid?</h3>
-                           <input type="radio" name="q1" value="a">Argus Filch
-                           <input type="radio" name="q1" value="b">Rubius Hagrid
-                           <input type="radio" name="q1" value="c">Gildiroy Lockhart
-                           <input type="radio" name="q1" value="d">Horance Slughorn 
+                        <h3>Q4.Who is the grounds keeper of Hogwarts?</h3>
+                           <input type="radio" name="q4" value="a">Argus Filch
+                           <input type="radio" name="q4" value="b">Rubius Hagrid
+                           <input type="radio" name="q4" value="c">Gildiroy Lockhart
+                           <input type="radio" name="q4" value="d">Horance Slughorn  
                    </div>
                    <br>
                    <div class="question5">
                         <h3>Q5.What is Albus Dumbledor's profession at Hogwarts?</h3>  
-                           <input type="radio" name="q1" value="a">Professor
-                           <input type="radio" name="q1" value="b">Janitor
-                           <input type="radio" name="q1" value="c">Headmaster
-                           <input type="radio" name="q1" value="d">Librarian
-                   </div>
+                           <input type="radio" name="q5" value="a">Professor
+                           <input type="radio" name="q5" value="b">Janitor
+                           <input type="radio" name="q5" value="c">Headmaster
+                           <input type="radio" name="q5" value="d">Librarian
+                   </div> 
                    <br>
                    <div class="question6">
-                    <h3>Q6.What are Slytherin house colors?</h3>
-                           <input type="radio" name="q1" value="a">Scarlet and Gold
-                           <input type="radio" name="q1" value="b">Black and Yellow
-                           <input type="radio" name="q1" value="c">Blue and Bronze
-                           <input type="radio" name="q1" value="d">Green and Silver 
+                     <h3>Q6.What are Slytherin house colors?</h3>
+                           <input type="radio" name="q6" value="a">Scarlet and Gold
+                           <input type="radio" name="q6" value="b">Black and Yellow
+                           <input type="radio" name="q6" value="c">Blue and Bronze
+                           <input type="radio" name="q6" value="d">Green and Silver 
                    </div>
-                   <input type="button" value="submit" onclick="check()">
+                   <button id="done" value="submit" type="button">Done!</button>
             </form>
 
-        <div id=message></div>
+          <!-- <div id=message></div>   -->
     </div>
 
-    <div id="startScreen">
-        <h1>Let's Get Magical!</h1>
-        <button id="start" type="button">Play!</button>
-    </div>
+    
 
-    <div id="endScreen">
+    <div id="endScreen"> 
         <h1>Results</h1>
-        <div id="numRight"></div>
-        <div id="numWrong"></div>
-        <button id="reset" type="button">Do You Want To Play Again?</button>
-    </div>
+
+        <h5>Correct Answers:</h5>
+        <p id= "right"></p>
+       
+       <h5>Wrong Answers:</h5>
+       <p id= "wrong"></p>
+    </div> 
 
 </body>
 
